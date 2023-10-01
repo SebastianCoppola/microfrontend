@@ -16,7 +16,6 @@ const MarketingApp = () => {
                 }
             }
         })
-        
         history.listen(onParentNavigate)
     },[])
 
