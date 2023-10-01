@@ -10,8 +10,8 @@ const generateClassName = createGenerateClassName({
 
 const App = ({ history, onSignIn }) => {
     return (
-        <div>
-            <StylesProvider generateClassName={generateClassName}>
+        <StylesProvider generateClassName={generateClassName}>
+            <div>
                 <Router history={history}>
                     <Switch>
                         <Route path='/auth/signin'>
@@ -22,8 +22,8 @@ const App = ({ history, onSignIn }) => {
                         </Route>
                     </Switch>
                 </Router>
-            </StylesProvider>
-        </div>
+            </div>
+        </StylesProvider>
     )
 }
 
